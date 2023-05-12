@@ -1,0 +1,93 @@
+html {
+    background-color: #f0f0f0;
+}
+
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.vl {
+    border-left: 1px solid rgb(136, 136, 136);
+    height: 80px;
+}
+
+.hl {
+    border-left: 1px solid rgb(136, 136, 136);
+    width: 80px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card_titulo_atributo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.5rem;
+    color: #919191;
+    white-space: nowrap;
+}
+
+.contabilizador_atributo {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+.card_valor_atributo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card_barra {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.cards__item {
+    display: flex;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    width: 100px;
+    border-radius: 0.5rem;
+    border-width: 0.25rem;
+    border-color: rgb(190, 68, 68);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-right: -5px;
+}
+
+
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
