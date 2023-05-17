@@ -1,125 +1,140 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+    background-color: rgba(10,23,55,0.5);
+    background-image: url("https://3.bp.blogspot.com/-piZWCW2uUbg/W2fPXxkWZgI/AAAAAAAAOu0/eydmMjTIqcwLMHEEr2H7imqoRTxMw4o9QCLcBGAs/s1600/among_trees_night_dribbble.png");
+
 }
 
-.container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+.background-img {
+    background-image: url("https://3.bp.blogspot.com/-piZWCW2uUbg/W2fPXxkWZgI/AAAAAAAAOu0/eydmMjTIqcwLMHEEr2H7imqoRTxMw4o9QCLcBGAs/s1600/among_trees_night_dribbble.png");
+    height: 400px;
+    width: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #2a3cad;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #2a3cad;
+    position: relative;
 }
+
 
 body {
-    background-color: #111845;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.vl {
+    border-left: 1px solid rgb(136, 136, 136);
+    height: 80px;
+}
 
-.box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 300px;
-    background: #111845a6;
+.hl {
+    border-left: 1px solid rgb(136, 136, 136);
+    width: 80px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.card_titulo_atributo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.5rem;
+    color: rgb(181, 121, 121);
+    white-space: nowrap;
+}
+
+.contabilizador_atributo {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    color: white;
+    margin-top: 0.25rem;
+}
+
+.card_valor_atributo {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+}
+
+.card_barra {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.cards__item {
+    display: flex;
+    padding: 1rem;
+}
+
+.card {
+    background-color: rgba(0, 33, 116, 0.5);
+    width: 100px;
+    border-radius: 0.5rem;
+    border-width: 0.25rem;
+    border-color: rgb(190, 68, 68);
+    border-style: double;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-right: -5px;
     border-radius: 10px;
     box-sizing: border-box;
     overflow: hidden;
     box-shadow: 0 20px 50px rgb(23, 32, 90);
     border: 2px solid #a64949;
     color: white;
-    padding: 20px;
 }
 
-.box:before {
+.card:before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(239, 239, 233, 0.1);
     transition: 0.5s;
     pointer-events: none;
 }
 
+.card:hover:before {
+    left: -20%;
+    transform: skewX(-5deg);
+}
 
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
 
-.box .content {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border: 1px solid #773131;
-    border-radius: 10px;
-    padding: 20px;
+td {
+    color: white;
     text-align: center;
-    box-shadow: 0 5px 10px rgba(9, 0, 0, 0.5);
-
 }
 
-.box span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    box-sizing: border-box;
-
+.header {
+    display: flex;
+    justify-content: space-between;
 }
-
-.box span:nth-child(1) {
-    transform: rotate(0deg);
-}
-
-.box span:nth-child(2) {
-    transform: rotate(90deg);
-}
-
-.box span:nth-child(3) {
-    transform: rotate(180deg);
-}
-
-.box span:nth-child(4) {
-    transform: rotate(270deg);
-}
-
-.box:hover span:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: #ff0000;
-    animation: animate 2.5s linear infinite;
-}
-
-@keyframes animate {
-    0% {
-        transform: scaleX(0);
-        transform-origin: left;
-    }
-
-    50% {
-        transform: scaleX(1);
-        transform-origin: left;
-    }
-
-    50.1% {
-        transform: scaleX(1);
-        transform-origin: right;
-
-    }
-
-    100% {
-        transform: scaleX(0);
-        transform-origin: right;
-
-    }
-
-
-}
-
-
-
-
